@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  twocount.web.api:
+    image: ${DOCKER_REGISTRY-}twocountwebapi
+    build:
+      context: .
+      dockerfile: twocount.web.api/Dockerfile
+    ports:
+      - "54011:80"
