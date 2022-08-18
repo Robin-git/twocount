@@ -1,0 +1,3 @@
+CREATE DATABASE twocount;
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
