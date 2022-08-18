@@ -2,6 +2,16 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twocount.web.api", "twocount.web.api\twocount.web.api.csproj", "{8C083EE0-C970-4801-B8B7-7D36CA9598B9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationCore", "ApplicationCore", "{D6F7BC39-B709-4E9E-86C4-82859257C1AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twocount.domain", "ApplicationCore\twocount.domain\twocount.domain.csproj", "{9DB1A5C2-46AB-4BA2-9312-0431543B4AA1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{AFF6A85B-390D-49E8-8237-55AE316030F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twocount.application", "ApplicationCore\twocount.application\twocount.application.csproj", "{8226BC8A-4F2B-4B51-BF05-E8C85F04D0B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twocount.infrastructure.postgresql", "Infrastructure\twocount.infrastructure.postgresql\twocount.infrastructure.postgresql.csproj", "{041859CC-9338-4981-8E78-AC76BB253725}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +22,22 @@ Global
 		{8C083EE0-C970-4801-B8B7-7D36CA9598B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C083EE0-C970-4801-B8B7-7D36CA9598B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C083EE0-C970-4801-B8B7-7D36CA9598B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB1A5C2-46AB-4BA2-9312-0431543B4AA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB1A5C2-46AB-4BA2-9312-0431543B4AA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB1A5C2-46AB-4BA2-9312-0431543B4AA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB1A5C2-46AB-4BA2-9312-0431543B4AA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8226BC8A-4F2B-4B51-BF05-E8C85F04D0B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8226BC8A-4F2B-4B51-BF05-E8C85F04D0B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8226BC8A-4F2B-4B51-BF05-E8C85F04D0B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8226BC8A-4F2B-4B51-BF05-E8C85F04D0B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041859CC-9338-4981-8E78-AC76BB253725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041859CC-9338-4981-8E78-AC76BB253725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041859CC-9338-4981-8E78-AC76BB253725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041859CC-9338-4981-8E78-AC76BB253725}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9DB1A5C2-46AB-4BA2-9312-0431543B4AA1} = {D6F7BC39-B709-4E9E-86C4-82859257C1AD}
+		{8226BC8A-4F2B-4B51-BF05-E8C85F04D0B4} = {D6F7BC39-B709-4E9E-86C4-82859257C1AD}
+		{041859CC-9338-4981-8E78-AC76BB253725} = {AFF6A85B-390D-49E8-8237-55AE316030F0}
 	EndGlobalSection
 EndGlobal

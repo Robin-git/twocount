@@ -1,0 +1,37 @@
+version: '3.4'
+
+services:
+
+  postgresqldb:
+    container_name: postgresqldb_container
+    hostname: postgresqldb
+    image: postgres:latest
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      PGDATA: /var/lib/postgresql/data
+    volumes: 
+      - ./postgresql-script/init.sh:/docker-entrypoint-initdb.d/init-database.sh
+      - postgresqldb-data:/var/lib/postgresql/data
+
+  pgadmin4:
+    container_name: pgadmin4_container
+    hostname: pgadmin4
+    image: dpage/pgadmin4:latest
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: kingju@wanadoo.fr
+      PGADMIN_DEFAULT_PASSWORD: secret
+      PGADMIN_LISTEN_PORT: 80
+    volumes:
+     - pgadmin-data:/var/lib/pgadmin
+
+volumes:
+  postgresqldb-data:
+  pgadmin-data:
