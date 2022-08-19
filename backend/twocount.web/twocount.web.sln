@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twocount.application", "ApplicationCore\twocount.application\twocount.application.csproj", "{8226BC8A-4F2B-4B51-BF05-E8C85F04D0B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twocount.infrastructure.postgresql", "Infrastructure\twocount.infrastructure.postgresql\twocount.infrastructure.postgresql.csproj", "{041859CC-9338-4981-8E78-AC76BB253725}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twocount.infrastructure", "Infrastructure\twocount.infrastructure\twocount.infrastructure.csproj", "{041859CC-9338-4981-8E78-AC76BB253725}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

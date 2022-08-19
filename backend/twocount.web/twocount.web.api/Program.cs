@@ -1,3 +1,6 @@
+using twocount.infrastructure;
+using twocount.infrastructure.Core.Config;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +9,12 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Infra
+builder.Services.AddInfrastructure(new InfrastructureConfig
+{
+    SecurityKey = builder.Configuration["Identity:SecurityKey"]
+});
 
 var app = builder.Build();
 
