@@ -13,7 +13,7 @@ public abstract class DbConnector
         _configuration = configuration;
     }
 
-    public IDbConnection CreateConnection()
+    protected IDbConnection CreateConnection()
     {
         var connectionString = _configuration.GetConnectionString("PostgresqlDb");
         return new NpgsqlConnection(connectionString);

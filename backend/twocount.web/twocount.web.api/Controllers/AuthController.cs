@@ -12,9 +12,9 @@ public class AuthController : ControllerBase
     private readonly ILogger<AuthController> _logger;
     private readonly IAuthenticationService _authenticationService;
 
-    public AuthController(ILogger<AuthController> logger, IAuthenticationService _authenticationService)
+    public AuthController(ILogger<AuthController> logger, IAuthenticationService authenticationService)
     {
-        this._authenticationService = _authenticationService;
+        _authenticationService = authenticationService;
         _logger = logger;
     }
 
