@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twocount.application", "App
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twocount.infrastructure", "Infrastructure\twocount.infrastructure\twocount.infrastructure.csproj", "{041859CC-9338-4981-8E78-AC76BB253725}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{0D235874-E81C-4F58-86DE-12543DDC3359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twocount.domain.test", "Test\twocount.domain.test\twocount.domain.test.csproj", "{89ADD76E-5B42-4379-9896-045C774A7A91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,10 +38,15 @@ Global
 		{041859CC-9338-4981-8E78-AC76BB253725}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{041859CC-9338-4981-8E78-AC76BB253725}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{041859CC-9338-4981-8E78-AC76BB253725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89ADD76E-5B42-4379-9896-045C774A7A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89ADD76E-5B42-4379-9896-045C774A7A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89ADD76E-5B42-4379-9896-045C774A7A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89ADD76E-5B42-4379-9896-045C774A7A91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9DB1A5C2-46AB-4BA2-9312-0431543B4AA1} = {D6F7BC39-B709-4E9E-86C4-82859257C1AD}
 		{8226BC8A-4F2B-4B51-BF05-E8C85F04D0B4} = {D6F7BC39-B709-4E9E-86C4-82859257C1AD}
 		{041859CC-9338-4981-8E78-AC76BB253725} = {AFF6A85B-390D-49E8-8237-55AE316030F0}
+		{89ADD76E-5B42-4379-9896-045C774A7A91} = {0D235874-E81C-4F58-86DE-12543DDC3359}
 	EndGlobalSection
 EndGlobal
